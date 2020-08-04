@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Workout Tracker</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Workout Tracker</h1>
+            <p class="lead">Track Your Workouts Here.</p>
+        </div>
     </div>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Exercise Type</label>
+                <select class="form-control" id="exerciseType">
+                    <option>Cardio</option>
+                    <option>Strength Training</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Exercise</label>
+                <input type="text" class="form-control" id="time" placeholder="Running">
+            </div>
+            <div class="form-group cardio">
+                <label for="exampleFormControlInput1">Time Spent</label>
+                <input type="text" class="form-control" id="time" placeholder="10 minutes">
+            </div>
+            <div class="form-group strength">
+                <label for="exampleFormControlSelect1">Sets</label>
+                <select class="form-control" id="sets">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group strength">
+                <label for="exampleFormControlSelect1">Reps</label>
+                <select class="form-control" id="reps">
+                    <option>5</option>
+                    <option>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                    <option>25</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" type="submit" id= "submit">Add to workout</button>
+            <p><a href="/books">See your books!</a></p>
+    <p><a href="/library">See your library!</a></p>
+        </form>
+    </div>
+    <script src="../js/script.js"></script>
 </body>
+
 </html>
